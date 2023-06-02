@@ -1,11 +1,11 @@
 function xyz = magnus3D(t, xyz)
     g = 9.81;
-    m = 1;
-    k = 0.01;
-    b = 0.01;
-    omega = 15;
-    theta = 160;
-    phi = 20;
+    m = 0.144;
+    k = 0.0002;
+    b = 0.0011;
+    omega = 36.95;
+    theta = 45;
+    phi = 0;
     omega_x = omega * sind(theta) * cosd(phi);
     omega_y = omega * sind(theta) * sind(phi);
     omega_z = omega * cosd(theta);

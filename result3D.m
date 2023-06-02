@@ -1,13 +1,13 @@
 x0 = 0;
-vx0 = 30;
+vx0 = 0;
 y0 = 0;
-vy0 = 17;
-z0 = 1;
+vy0 = 43.5;
+z0 = 1.681;
 vz0 = 0;
 xyz0 = [x0;vx0;y0;vy0;z0;vz0];
 timeBegin = 0;
-timeEnd = 10;
-timeStep = 0.25;
+timeEnd = 0.5;
+timeStep = 0.02;
 times = timeBegin:timeStep:timeEnd;
 
 [t, xyz] = ode45(@magnus3D, times, xyz0);

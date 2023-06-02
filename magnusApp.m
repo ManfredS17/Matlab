@@ -1,7 +1,7 @@
 function xyz = magnusApp(t, xyz, omega,m)
     g = 9.81;
-    k = 0.01;
-    b = 0.47;
+    k = 0.0002;
+    b = 0.0011;
     %dxdt=x^.
     xyz1 = xyz(2)
     %dx^.dt=...
