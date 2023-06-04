@@ -1,13 +1,19 @@
-function xyz = NewMagnusApp(t, xyz, omega, m, omega_value)
+function xyz = NewMagnusApp(t, xyz, omega, m, omega_value, v)
     g = 9.81;
     rho = 1.204;
-    % r = 3.7cm
+    r_ball = 0.037;
     A = 4.3e-3;
     L = rho * A / 2;
-    Cm = 0.2;
-    % Cm = 0.2088;
+    S = r_ball * omega_value / v;
+    
+    if S < 0.1
+       Cm = 1.5*S;
+    else
+        Cm = 0.09+0.6*S;
+    end
+    
     Cd = 0.204;
-    % Cd = 0.21;
+
     %dxdt=x^.
     xyz1 = xyz(2); 
     %dx^.dt=...
