@@ -1,8 +1,13 @@
 x0 = 0;
 vx0 = 0;
 y0 = 0;
+<<<<<<< HEAD
 vy0 = 43.45;
 z0 = 1.44;
+=======
+vy0 = 43.5;
+z0 = 1.681;
+>>>>>>> 5d6f52ab9bc0b63ee73001cd1313b5e7ba3d1c1d
 vz0 = 0;
 xyz0 = [x0;vx0;y0;vy0;z0;vz0];
 timeBegin = 0;

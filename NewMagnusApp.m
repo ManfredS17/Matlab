@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function xyz = NewMagnusApp(t, xyz, omega, m, omega_value, v)
     g = 9.81;
     rho = 1.204;
@@ -14,6 +15,18 @@ function xyz = NewMagnusApp(t, xyz, omega, m, omega_value, v)
     
     Cd = 0.204;
 
+=======
+function xyz = NewMagnusApp(t, xyz, omega, m, omega_value)
+    g = 9.81;
+    rho = 1.204;
+    % r = 3.7cm
+    A = 4.3e-3;
+    L = rho * A / 2;
+    Cm = 0.2;
+    % Cm = 0.2088;
+    Cd = 0.204;
+    % Cd = 0.21;
+>>>>>>> 5d6f52ab9bc0b63ee73001cd1313b5e7ba3d1c1d
     %dxdt=x^.
     xyz1 = xyz(2); 
     %dx^.dt=...
